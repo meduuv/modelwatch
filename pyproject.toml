@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "modelwatch"
+version = "0.1.0"
+description = "Lightweight model metadata comparison utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/modelwatch"]
+
+[dependency-groups]
+test = ["pytest>=8"]
